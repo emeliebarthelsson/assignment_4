@@ -1,0 +1,56 @@
+:root {
+    /* color */
+    --light-grey-100: #FFFFFF;
+    --light-grey-200: #F7F7F7;
+    --light-grey-300: #F0F0F0;
+    --light-grey-400: #E8E8E8;
+    --light-grey-500: #D9D9D9;
+
+    --dark-grey-100: #636363;
+    --dark-grey-200: #545454;
+    --dark-grey-300: #4D4D4D;
+    --dark-grey-400: #444444;
+    --dark-grey-500: #363636;
+
+    --dark-grey-400-opacity: #44444480;
+
+
+    --red-100: #C90A0D;
+    --red-200: #B9090C;
+    --red-300: #AA080B;
+
+    --red-100-opacity: #C90A0D80;
+
+    --green-100: #056721;
+
+    --blue-100: #1271E6;
+    
+    --brown-100: #73551E;
+
+    /* spacing */
+    --spacing-x-small: 0.5rem;
+    --spacing-small: 0.75rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 1.5rem;
+    --spacing-x-large: 2rem;
+
+    /* border-radius */
+    --border-radius-small: 0.5rem;
+    --border-radius-medium: 1rem;
+    --border-radius-large: 50%;
+
+    /* font size */
+    --body-small: 0.875rem;
+    --body-medium: 1rem;
+    --body-large: 1.25rem;
+    --body-x-large: 1.5rem;
+
+    --heading-small: 1.75rem;
+    --heading-medium: 2rem;
+    --heading-large: 2.25rem;
+    --heading-x-large: 3rem;
+
+    /* line-height */
+    --line-height-body: 1.5rem;
+    --line-height-heading: 2.5rem;
+}
