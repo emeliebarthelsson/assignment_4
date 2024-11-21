@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 400 600;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-background-color);
+    font-family: "Inter", sans-serif;
+    color: var(--dark-grey-400);
+}
+
+header {
+    width: 100%;
+    padding: var(--spacing-x-large);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grey-500);
+    font-size: var(--heading-small);
+    font-weight: 600;
+}

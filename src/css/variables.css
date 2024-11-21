@@ -1,5 +1,7 @@
 :root {
     /* color */
+    --primary-background-color: #E8EAED;
+
     --light-grey-100: #FFFFFF;
     --light-grey-200: #F7F7F7;
     --light-grey-300: #F0F0F0;
@@ -13,7 +15,6 @@
     --dark-grey-500: #363636;
 
     --dark-grey-400-opacity: #44444480;
-
 
     --red-100: #C90A0D;
     --red-200: #B9090C;

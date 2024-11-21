@@ -6,8 +6,13 @@
 
 a {
     text-decoration: none;
+    color: var(--dark-grey-400);
 }
 
 button {
     cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
 }
