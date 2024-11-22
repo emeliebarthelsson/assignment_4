@@ -1,0 +1,61 @@
+.component__text-field {
+    display: flex;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-field label {
+    margin-top: var(--spacing-small);
+}
+
+.text-field__light label {
+    color: var(--dark-grey-400);
+}
+
+.text-field__dark label {
+    color: var(--light-grey-100);
+}
+
+.text-field input {
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: var(--border-radius-medium);
+    border: none;
+    margin-top: var(--spacing-x-small);
+}
+
+.text-field__light input {
+    background-color: var(--light-grey-100);
+}
+
+.text-field__dark input {
+    background-color: var(--dark-grey-200);
+}
+
+.text-field__light input::placeholder {
+    color: var(--dark-grey-400-opacity);
+    font-size: var(--body-medium);
+}
+
+.text-field__dark input::placeholder {
+    color: var(--light-grey-500);
+    font-size: var(--body-medium);
+}
+
+.text-field__light input:focus {
+    outline: 1px solid var(--dark-grey-400);
+}
+
+.text-field__dark input:focus {
+    outline: 1px solid var(--light-grey-100);
+}
+
+.text-field__light input:hover {
+    background-color: var(--light-grey-200);
+}
+
+.text-field__dark input:hover {
+    background-color: var(--dark-grey-100);
+}
