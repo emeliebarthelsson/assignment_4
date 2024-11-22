@@ -1,0 +1,32 @@
+.navigation-container {
+    min-width: 350px;
+    max-width: 450px;
+    display: flex; 
+    justify-content: space-around;
+    background-color: var(--light-grey-100);
+}
+
+.navigation-container__dark {
+    background-color: var(--dark-grey-400);
+}
+
+.navigation__button {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-size: var(--body-small);
+}
+
+.navigation__button--dark {
+    color: var(--light-grey-100);
+}
+
+.navigation__button:focus svg {
+    fill: var(--blue-100);
+}
+.navigation__button:focus {
+    color: var(--blue-100);
+}
