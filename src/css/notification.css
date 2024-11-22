@@ -49,6 +49,7 @@
 
 .notification:hover svg {
     display: block;
+    cursor: pointer;
 }
 
 .notification__text {
