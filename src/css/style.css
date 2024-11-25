@@ -7,7 +7,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: var(--primary-background-color);
+    background-color: var(--light-grey-400);
     font-family: "Inter", sans-serif;
     color: var(--dark-grey-400);
 }
@@ -18,7 +18,107 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--light-grey-500);
+    background-color: var(--light-grey-400);
     font-size: var(--heading-small);
     font-weight: 600;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tabs */
+.tabs {
+    font-weight: 600;
+    padding: var(--spacing-small);
+    margin-bottom: var(--spacing-x-large);
+}
+
+.tabs__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+}
+
+.tabs__list-item--active a {
+    color: var(--blue-100);
+}
+
+/* component */
+.component {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-small);
+}
+
+.component__content {
+    display: none;
+}
+
+.component__content--active {
+    display: flex;
+}
+
+.component__button h3 {
+    font-size: var(--body-medium);
+}
+
+.component__card,
+.component__text-field,
+.component__form,
+.component__notification,
+.component__navigation-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-x-large);
+}
+
+.component__accordion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .tabs__list {
+        gap: var(--spacing-large);
+    }
+}
+
+/* desktop small */
+@media screen and (min-width: 1024px) {
+    header {
+        margin-bottom: var(--spacing-x-large);
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: var(--spacing-x-large);
+    }
+    
+    .tabs {
+        padding: var(--spacing-medium);
+    }
+
+    .tabs__list {
+        flex-direction: column;
+        gap: var(--spacing-small);
+    }
+
+    .component {
+        padding: var(--spacing-medium);
+    }
 }

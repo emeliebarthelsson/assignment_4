@@ -1,3 +1,4 @@
+/* text-field component */
 .component__text-field {
     display: flex;
 }
@@ -44,6 +45,7 @@
     font-size: var(--body-medium);
 }
 
+/* text-field states */
 .text-field__light input:focus {
     outline: 1px solid var(--dark-grey-400);
 }

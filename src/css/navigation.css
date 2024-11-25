@@ -1,3 +1,4 @@
+/* navigation-bar component */
 .navigation-container {
     min-width: 350px;
     max-width: 450px;
@@ -24,9 +25,17 @@
     color: var(--light-grey-100);
 }
 
+/* button states */
 .navigation__button:focus svg {
     fill: var(--blue-100);
 }
 .navigation__button:focus {
+    color: var(--blue-100);
+}
+
+.navigation__button:active svg {
+    fill: var(--blue-100);
+}
+.navigation__button:active {
     color: var(--blue-100);
 }

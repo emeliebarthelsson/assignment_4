@@ -1,3 +1,4 @@
+/* card component */
 .card {
     width: 300px;
     height: 400px;
@@ -8,6 +9,7 @@
     cursor: pointer;
 }
 
+/* card light */
 .card__light {
     color: var(--dark-grey-400);
 }
@@ -36,6 +38,7 @@
     margin-top: var(--spacing-x-small);
 }
 
+/* card states light */
 .card__light:focus {
     background-color: var(--light-grey-100);
 }
@@ -53,6 +56,7 @@
     cursor: auto;
 }
 
+/* card dark */
 .card__dark {
     color: var(--light-grey-100);
 }
@@ -62,6 +66,7 @@
     background-color: var(--dark-grey-400);
 }
 
+/* card states dark */
 .card__dark:focus {
     background-color: var(--dark-grey-300);
 }

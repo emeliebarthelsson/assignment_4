@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/variables.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/button.css"/>
+    <link rel="stylesheet" href="./css/button-icon.css"/>
     <link rel="stylesheet" href="./css/card.css"/>
     <link rel="stylesheet" href="./css/input.css"/>
     <link rel="stylesheet" href="./css/form.css"/>
@@ -17,26 +18,35 @@
 </head>
 <body>
     <header>
-        <a href="./index.html">Library</a>
+        <a href="./index.html">Components</a>
     </header>
     <main>
-        <section class="component">
-            <h2 class="component__title"></h2>
-            <div class="component__list-container">
-                <ul class="component__list">
-                    <li class="component__list-item"><a class="component__list-item-link" href="">Button</a></li>
-                    <li class="component__list-item"><a class="component__list-item-link" href="">Icon button</a></li>
-                    <li class="component__list-item"><a class="component__list-item-link" href="">Card</a></li>
-                    <li class="component__list-item"><a class="component__list-item-link" href="">Text field</a></li>
-                    <li class="component__list-item"><a class="component__list-item-link" href="">Form</a></li>
-                    <li class="component__list-item"><a class="component__list-item-link" href="">Notification</a></li>
-                    <li class="component__list-item"><a class="component__list-item-link" href="">Navigation bar</a></li>
-                    <li class="component__list-item"><a class="component__list-item-link" href="">Accordion</a></li>
+        <section class="tabs">
+            <h2 class="tabs__title"></h2>
+            <div class="tabs__list-container">
+                <ul class="tabs__list">
+                    <li class="tabs__list-item tabs__list-item--active"><a class="tabs__list-item-link" href="#component__button">Button</a></li>
+                    <li class="tabs__list-item"><a class="tabs__list-item-link" href="#component__button-icon">Icon button</a></li>
+                    <li class="tabs__list-item"><a class="tabs__list-item-link" href="#component__card">Card</a></li>
+                    <li class="tabs__list-item"><a class="tabs__list-item-link" href="#component__text-field">Text field</a></li>
+                    <li class="tabs__list-item"><a class="tabs__list-item-link" href="#component__form">Form</a></li>
+                    <li class="tabs__list-item"><a class="tabs__list-item-link" href="#component__notification">Notification</a></li>
+                    <li class="tabs__list-item"><a class="tabs__list-item-link" href="#component__navigation-bar">Navigation bar</a></li>
+                    <li class="tabs__list-item"><a class="tabs__list-item-link" href="#component__accordion">Accordion</a></li>
                 </ul>
             </div>
+        </section>
+        <section class="component">
             <div class="component__content-container">
-                <div class="component__content">
-                    <div class="component__button">
+                <div class="component__content component__content--active">
+                    <div class="component__button" id="component__button">
+                        <h3 class="button__heading-primary">Primary</h3>
+                        <h3 class="button__heading-secondary">Secondary</h3>
+                        <h3 class="button__heading-tertiary">Tertiary</h3>
+                        <h3 class="button__heading-ghost">Ghost</h3>
+                        <h3 class="button__heading-destructive">Destructive</h3>
+                        <h3 class="button__heading-regular">Regular</h3>
+                        <h3 class="button__heading-disabled">Disabled</h3>
                         <button class="button__primary">Label</button>
                         <button class="button__primary--disabled">Label</button>
                         <button class="button__secondary">Label</button>
@@ -50,7 +60,14 @@
                     </div>
                 </div>
                 <div class="component__content">
-                    <div class="component__icon-button">
+                    <div class="component__button-icon" id="component__button-icon">
+                        <h3 class="button-icon__heading-primary">Primary</h3>
+                        <h3 class="button-icon__heading-secondary">Secondary</h3>
+                        <h3 class="button-icon__heading-tertiary">Tertiary</h3>
+                        <h3 class="button-icon__heading-ghost">Ghost</h3>
+                        <h3 class="button-icon__heading-destructive">Destructive</h3>
+                        <h3 class="button-icon__heading-regular">Regular</h3>
+                        <h3 class="button-icon__heading-disabled">Disabled</h3>
                         <button class="button-icon button-icon__primary">
                            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#444444"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm112-260q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Z"/></svg>                            
                         </button>
@@ -84,7 +101,7 @@
                     </div>
                 </div>
                 <div class="component__content">
-                    <div class="component__card">
+                    <div class="component__card" id="component__card">
                         <div class="card card__light">
                             <div class="card__img-container">
                             </div>
@@ -120,7 +137,7 @@
                     </div>
                 </div>
                 <div class="component__content">
-                    <div class="component__text-field">
+                    <div class="component__text-field" id="component__text-field">
                         <div class="text-field text-field__light">
                             <label for="text-field">Label</label>
                             <input type="text" id="text-field" name="text-field" maxlength="50" placeholder="Placeholder">
@@ -132,7 +149,7 @@
                     </div>
                 </div>
                 <div class="component__content">
-                    <div class="component__form">
+                    <div class="component__form" id="component__form">
                         <form class="form form__light">
                             <h2 class="form__heading">Login</h2>
                             <div class="form__input-container">
@@ -161,7 +178,7 @@
                             <div class="form__link-container">
                                 <a href="#">Forgot Password?</a>
                             </div>
-                            <button class="button__secondary">Sign in</button>
+                            <button class="button__primary">Sign in</button>
                             <div class="form__button-container">
                                 <p>Don't have an account?</p>
                                 <button class="button__ghost form__button--ghost">Sign up</button>
@@ -170,7 +187,7 @@
                     </div>
                 </div>
                 <div class="component__content">
-                    <div class="component__notification">
+                    <div class="component__notification" id="component__notification">
                         <div class="notification notification__light">
                             <div class="notification__top-content">
                                 <h3>Notification</h3>
@@ -190,7 +207,7 @@
                     </div>
                 </div>
                 <div class="component__content">
-                    <div class="component__navigation-bar">
+                    <div class="component__navigation-bar" id="component__navigation-bar">
                         <div class="navigation-container">
                             <button class="navigation__button">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#444444"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/></svg>Home
@@ -222,7 +239,7 @@
                     </div>
                 </div>
                 <div class="component__content">
-                    <div class="component__accordion">
+                    <div class="component__accordion" id="component__accordion">
                         <div class="accordion__title-container">
                             <h3 class="accordion__title">Accordion</h3>
                             <button class="accordion__toggle button-icon button-icon__ghost">

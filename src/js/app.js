@@ -11,3 +11,17 @@ titleContainer.forEach((title, index) => {
     toggleIcon[index].classList.toggle("rotate-icon");
   });
 });
+
+const tabButtons = document.querySelectorAll(".tabs__list-item");
+const tabContents = document.querySelectorAll(".component__content");
+
+tabButtons.forEach((tab, index) => {
+  tab.addEventListener("click", (e) => {
+    tabContents.forEach((content) => content.classList.remove("component__content--active"));
+
+    tabButtons.forEach((button) => button.classList.remove("tabs__list-item--active"));
+
+    e.currentTarget.classList.add("tabs__list-item--active");
+    tabContents[index].classList.add("component__content--active");
+  });
+});

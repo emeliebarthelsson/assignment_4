@@ -1,3 +1,4 @@
+/* form component */
 form {
     width: 350px;
     height: 450px;
@@ -74,6 +75,10 @@ label {
     color: var(--light-grey-500);
 }
 
+.form .button__primary {
+    background-color: var(--blue-100);
+}
+
 .form__button-container {
     display: flex;
     justify-content: space-between;
@@ -85,6 +90,7 @@ label {
     color: var(--light-grey-100);
 }
 
+/* button states */
 .form .form__button--ghost:hover {
     background-color: inherit;
 }

@@ -1,3 +1,4 @@
+/* notification component */
 .notification {
     width: 370px;
     height: auto;
@@ -43,6 +44,12 @@
     display: none;
 }
 
+.notification__text {
+    margin-top: var(--spacing-x-small);
+    font-size: var(--body-medium);
+}
+
+/* hover state */
 .notification:hover .notification__time {
     display: none;
 }
@@ -52,7 +59,10 @@
     cursor: pointer;
 }
 
-.notification__text {
-    margin-top: var(--spacing-x-small);
-    font-size: var(--body-medium);
+.notification__light:hover {
+    background-color: var(--light-grey-100);
+}
+
+.notification__dark:hover {
+    background-color: var(--dark-grey-400);
 }
