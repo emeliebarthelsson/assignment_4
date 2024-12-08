@@ -1,10 +1,15 @@
 /* navigation-bar component */
+.component__navigation-bar h3 {
+    margin-bottom: var(--spacing-small);
+}
+
 .navigation-container {
     min-width: 350px;
     max-width: 450px;
     display: flex; 
     justify-content: space-around;
     background-color: var(--light-grey-100);
+    margin-bottom: var(--spacing-large);
 }
 
 .navigation-container__dark {
@@ -29,6 +34,7 @@
 .navigation__button:focus svg {
     fill: var(--blue-100);
 }
+
 .navigation__button:focus {
     color: var(--blue-100);
 }
@@ -36,6 +42,14 @@
 .navigation__button:active svg {
     fill: var(--blue-100);
 }
+
 .navigation__button:active {
     color: var(--blue-100);
+}
+
+/* placement */
+.component__navigation-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }

@@ -16,3 +16,7 @@ button {
 ul {
     list-style-type: none;
 }
+
+h3 {
+    font-size: var(--body-medium);
+}

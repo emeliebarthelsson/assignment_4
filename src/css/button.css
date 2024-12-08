@@ -1,6 +1,10 @@
 /* button component */
+.component__button h3 {
+    font-size: var(--body-x-small);
+}
+
 button {
-    font-size: var(--body-medium);
+    font-size: var(--body-small);
     color: var(--dark-grey-400);
     padding: var(--spacing-small) var(--spacing-medium);
     border-radius: var(--border-radius-medium);
@@ -13,17 +17,20 @@ button {
     color: var(--light-grey-100);
 }
 
-.button__primary:hover {
+.button__primary--hover {
     background-color: var(--dark-grey-300);
+    color: var(--light-grey-100);
 }
 
-.button__primary:active {
+.button__primary--press {
     background-color: var(--dark-grey-200);
+    color: var(--light-grey-100);
 }
 
 .button__primary--disabled {
     background-color: var(--light-grey-500);
     color: var(--dark-grey-400-opacity);
+    cursor: auto;
 }
 
 /* button secondary */
@@ -31,39 +38,18 @@ button {
     background-color: var(--light-grey-100);
 }
 
-.button__secondary:hover {
+.button__secondary--hover {
     background-color: var(--light-grey-200);
 }
 
-.button__secondary:active {
+.button__secondary--press {
     background-color: var(--light-grey-300);
 }
 
 .button__secondary--disabled {
     background-color: var(--light-grey-500);
     color: var(--dark-grey-400-opacity);
-}
-
-/* button tertiary */
-.button__tertiary {
-    background-color: transparent;
-    border: 1px solid var(--dark-grey-400);
-}
-
-.button__tertiary:hover {
-    color: var(--dark-grey-300);
-    border: 1px solid var(--dark-grey-300);
-}
-
-.button__tertiary:active {
-    color: var(--dark-grey-200);
-    border: 1px solid var(--dark-grey-200);
-}
-
-.button__tertiary--disabled {
-    background-color: transparent;
-    color: var(--light-grey-500);
-    border: 1px solid var(--light-grey-500);
+    cursor: auto;
 }
 
 /* button ghost */
@@ -71,43 +57,49 @@ button {
     background-color: transparent;
 }
 
-.button__ghost:hover {
+.button__ghost--hover {
     background-color: var(--light-grey-200);
 }
 
-.button__ghost:active {
+.button__ghost--press {
     background-color: var(--light-grey-300);
 }
 
 .button__ghost--disabled {
     background-color: transparent;
     color: var(--dark-grey-400-opacity);
+    cursor: auto;
 }
 
-/* button destsecondary */
+/* button destructive */
 .button__destructive {
     background-color: var(--red-100);
     color: var(--light-grey-100);
 }
 
-.button__destructive:hover {
+.button__destructive--hover {
     background-color: var(--red-200);
+    color: var(--light-grey-100);
 }
 
-.button__destructive:active {
+.button__destructive--press {
     background-color: var(--red-300);
+    color: var(--light-grey-100);
 }
 
 .button__destructive--disabled {
     background-color: var(--red-100-opacity);
     color: var(--light-grey-100);
+    cursor: auto;
 }
 
 /* grid placement */
 .component__button {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-x-large);
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: var(--spacing-x-large);
+    column-gap: 0.5rem;
+    align-items: center;
 }
 
 .button__heading-primary {
@@ -120,19 +112,14 @@ button {
     grid-row: 3/4;    
 }
 
-.button__heading-tertiary {
+.button__heading-ghost {
     grid-column: 1/2;
     grid-row: 4/5;    
 }
 
-.button__heading-ghost {
-    grid-column: 1/2;
-    grid-row: 5/6;    
-}
-
 .button__heading-destructive {
     grid-column: 1/2;
-    grid-row: 6/7;    
+    grid-row: 5/6;    
 }
 
 .button__heading-regular {
@@ -140,8 +127,18 @@ button {
     grid-row: 1/2;    
 }
 
-.button__heading-disabled {
+.button__heading-hover {
     grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.button__heading-press {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.button__heading-disabled {
+    grid-column: 5/6;
     grid-row: 1/2;    
 }
 
@@ -150,8 +147,18 @@ button {
     grid-row: 2/3;
 }
 
-.button__primary--disabled {
+.button__primary--hover {
     grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.button__primary--press {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.button__primary--disabled {
+    grid-column: 5/6;
     grid-row: 2/3;
 }
 
@@ -160,36 +167,72 @@ button {
     grid-row: 3/4;
 }
 
-.button__secondary--disabled {
+.button__secondary--hover {
     grid-column: 3/4;
     grid-row: 3/4;
 }
 
-.button__tertiary {
-    grid-column: 2/3;
-    grid-row: 4/5;
+.button__secondary--press {
+    grid-column: 4/5;
+    grid-row: 3/4;
 }
-.button__tertiary--disabled {
-    grid-column: 3/4;
-    grid-row: 4/5;
+
+.button__secondary--disabled {
+    grid-column: 5/6;
+    grid-row: 3/4;
 }
 
 .button__ghost {
     grid-column: 2/3;
-    grid-row: 5/6;
+    grid-row: 4/5;
+}
+
+.button__ghost--hover {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.button__ghost--press {
+    grid-column: 4/5;
+    grid-row: 4/5;
 }
 
 .button__ghost--disabled {
-    grid-column: 3/4;
-    grid-row: 5/6;
+    grid-column: 5/6;
+    grid-row: 4/5;
 }
 
 .button__destructive {
     grid-column: 2/3;
-    grid-row: 6/7;    
+    grid-row: 5/6;    
+}
+
+.button__destructive--hover {
+    grid-column: 3/4;
+    grid-row: 5/6;    
+}
+
+.button__destructive--press {
+    grid-column: 4/5;
+    grid-row: 5/6;    
 }
 
 .button__destructive--disabled {
-    grid-column: 3/4;
-    grid-row: 6/7;    
+    grid-column: 5/6;
+    grid-row: 5/6;    
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {  
+    .component__button {
+        gap: var(--spacing-x-large);
+    }
+    
+    .component__button h3 {
+        font-size: var(--body-medium);
+    }
+
+    .button {
+        font-size: var(--body-medium);
+    }
 }

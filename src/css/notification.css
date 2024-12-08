@@ -1,21 +1,13 @@
 /* notification component */
 .notification {
-    width: 370px;
+    width: 360px;
     height: auto;
     padding: var(--spacing-medium);
     border-radius: var(--border-radius-small);
-}
-
-.notification__light {
     background-color: #ffffffcc;
     backdrop-filter: blur(30px);
     color: var(--dark-grey-400);
-}
-
-.notification__dark {
-    background-color: #444444cc;
-    backdrop-filter: blur(30px);
-    color: var(--light-grey-100);
+    margin-bottom: var(--spacing-medium);
 }
 
 .notification__top-content {
@@ -24,24 +16,13 @@
     justify-content: space-between;
 }
 
-.notification h3 {
-    font-size: var(--body-medium);
+.notification__top-content svg {
+    display: none;
 }
 
 .notification__time {
     font-size: var(--body-small);
-}
-
-.notification__light .notification__time {
     color: #444444cc;
-}
-
-.notification__dark .notification__time {
-    color: #ffffffcc;
-}
-
-.notification__top-content svg {
-    display: none;
 }
 
 .notification__text {
@@ -50,19 +31,33 @@
 }
 
 /* hover state */
-.notification:hover .notification__time {
-    display: none;
-}
-
-.notification:hover svg {
-    display: block;
-    cursor: pointer;
-}
-
-.notification__light:hover {
+.notification--hover {
     background-color: var(--light-grey-100);
 }
 
-.notification__dark:hover {
-    background-color: var(--dark-grey-400);
+.notification--hover .notification__time {
+    display: none;
+}
+
+.notification--hover .notification__top-content svg {
+    display: block;
+    cursor: pointer;    
+}
+
+/* warning state */
+.notification--warning {
+    background-color: var(--red-100);
+    color: var(--light-grey-100);
+}
+
+.notification--warning .notification__time {
+    color: var(--light-grey-100);
+}
+
+/* placement */
+.component__notification {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--spacing-small);
 }

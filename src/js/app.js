@@ -1,3 +1,4 @@
+// accordion
 const titleContainer = document.querySelectorAll(".accordion__title-container");
 const contentContainer = document.querySelectorAll(".accordion__content-container");
 const toggleIcon = document.querySelectorAll(".accordion__toggle-icon");
@@ -12,6 +13,7 @@ titleContainer.forEach((title, index) => {
   });
 });
 
+// tabs
 const tabButtons = document.querySelectorAll(".tabs__list-item");
 const tabContents = document.querySelectorAll(".component__content");
 

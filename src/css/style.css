@@ -50,7 +50,7 @@ main {
 }
 
 /* component */
-.component {
+.components {
     display: flex;
     flex-direction: column;
     padding: var(--spacing-small);
@@ -62,31 +62,6 @@ main {
 
 .component__content--active {
     display: flex;
-}
-
-.component__button h3 {
-    font-size: var(--body-medium);
-}
-
-.component__card,
-.component__text-field,
-.component__form,
-.component__notification,
-.component__navigation-bar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: var(--spacing-x-large);
-}
-
-.component__accordion {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 /* tablet */
@@ -103,10 +78,9 @@ main {
     }
 
     main {
-        display: flex;
         flex-direction: row;
         align-items: start;
-        gap: var(--spacing-x-large);
+        justify-content: start;
     }
     
     .tabs {
@@ -118,7 +92,8 @@ main {
         gap: var(--spacing-small);
     }
 
-    .component {
+    .components {
         padding: var(--spacing-medium);
+        margin: 0 auto;
     }
 }
