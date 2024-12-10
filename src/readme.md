@@ -14,7 +14,7 @@ Purpose of this assignment:
 https://github.com/emeliebarthelsson/assignment_4.git
 
 ## Netlify
-
+https://clever-figolla-95fa92.netlify.app/
 
 ## Author
 Emelie Barthelsson 
